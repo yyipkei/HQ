@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="QA - Oracle - BRIDFEFR" uuid="bfcb1cab-427b-45f3-9fc5-e15fa1f120ec">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source name="QA - Oracle - BRIDGE" uuid="ffc68113-a604-4eda-b477-f4b36a2f6df7">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source name="SQL Server - posdb@HKCT5L" uuid="05b32995-a463-466f-aa48-23fbe4128da1">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+</component>

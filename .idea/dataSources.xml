@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="498947556">
+    <data-source source="LOCAL" name="QA - Oracle - BRIDFEFR" uuid="bfcb1cab-427b-45f3-9fc5-e15fa1f120ec">
+      <driver-ref>oracle</driver-ref>
+      <synchronize>true</synchronize>
+      <auto-commit>false</auto-commit>
+      <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
+      <jdbc-url>jdbc:oracle:thin:@10.1.7.44:1521:ORCL</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="QA - Oracle - BRIDGE" uuid="ffc68113-a604-4eda-b477-f4b36a2f6df7">
+      <driver-ref>oracle</driver-ref>
+      <synchronize>true</synchronize>
+      <auto-commit>false</auto-commit>
+      <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
+      <jdbc-url>jdbc:oracle:thin:@10.1.7.44:1521:ORCL</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="SQL Server - posdb@HKCT5L" uuid="05b32995-a463-466f-aa48-23fbe4128da1">
+      <driver-ref>sqlserver.jtds</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>net.sourceforge.jtds.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:jtds:sqlserver://HKCT5L:1433/posdb</jdbc-url>
+      <libraries />
+    </data-source>
+  </component>
+</project>

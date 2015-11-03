@@ -1,6 +1,6 @@
 @echo off
 
-set root=C:\Source\BRIDGE-HQ
+set root=C:\Kei-DataBridging\HQ
 
 cd %root%
 call mvn clean install

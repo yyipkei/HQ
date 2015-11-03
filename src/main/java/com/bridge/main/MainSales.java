@@ -47,7 +47,8 @@ public class MainSales implements Job {
 		dataupdatelogs.clear();
 
 		try {
-
+			runStoredProceduregoalastupddt("MSSQL");
+			runStoredProcedurelastupddt("MSSQL");
 			runStoredProcedure("MSSQL");
 			selectRecordsFromTable("MSSQL");
 			for (Dataupdatelog dataupdatelog : dataupdatelogs)
@@ -173,6 +174,86 @@ public class MainSales implements Job {
 				dataupdatelogs.add(dataupdatelog);
 
 			}
+
+		} catch (SQLException e) {
+
+			logger.info(e.getMessage());
+
+		} finally {
+
+			if (preparedStatement != null) {
+				preparedStatement.close();
+			}
+
+			if (dbConnection != null) {
+				dbConnection.close();
+			}
+
+		}
+
+	}
+
+	private static void runStoredProceduregoalastupddt(String database) throws SQLException {
+
+		Connection dbConnection = null;
+		PreparedStatement preparedStatement = null;
+		logger.info("Starting usp_goa_txn_last_upd_dt_batch");
+		String spSQL = "{call usp_goa_txn_last_upd_dt_batch}";
+		try {
+
+			if (Objects.equals(database, "Oracle")) {
+				HikariQracleFrom OrcaleFrompool = HikariQracleFrom
+						.getInstance();
+				dbConnection = OrcaleFrompool.getConnection();
+				// dbConnection = OracleFrom.getDBConnection();
+			} else {
+				HikariMssql Mssqlpool = HikariMssql.getInstance();
+				dbConnection = Mssqlpool.getConnection();
+				// dbConnection = Mssql.getDBConnection();
+			}
+
+			preparedStatement = dbConnection.prepareStatement(spSQL);
+			preparedStatement.executeUpdate();
+
+		} catch (SQLException e) {
+
+			logger.info(e.getMessage());
+
+		} finally {
+
+			if (preparedStatement != null) {
+				preparedStatement.close();
+			}
+
+			if (dbConnection != null) {
+				dbConnection.close();
+			}
+
+		}
+
+	}
+
+	private static void runStoredProcedurelastupddt(String database) throws SQLException {
+
+		Connection dbConnection = null;
+		PreparedStatement preparedStatement = null;
+		logger.info("Starting usp_usp_txn_last_upd_dt_batch");
+		String spSQL = "{call usp_usp_txn_last_upd_dt_batch}";
+		try {
+
+			if (Objects.equals(database, "Oracle")) {
+				HikariQracleFrom OrcaleFrompool = HikariQracleFrom
+						.getInstance();
+				dbConnection = OrcaleFrompool.getConnection();
+				// dbConnection = OracleFrom.getDBConnection();
+			} else {
+				HikariMssql Mssqlpool = HikariMssql.getInstance();
+				dbConnection = Mssqlpool.getConnection();
+				// dbConnection = Mssql.getDBConnection();
+			}
+
+			preparedStatement = dbConnection.prepareStatement(spSQL);
+			preparedStatement.executeUpdate();
 
 		} catch (SQLException e) {
 

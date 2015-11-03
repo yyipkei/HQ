@@ -33,6 +33,7 @@ com\bridge\insertdeposit\InsertBrreg.class
 com\bridge\routemerge\Cafecoupondet.class
 com\bridge\routesales\Savwp.class
 com\bridge\routesales\Sahdr.class
+com\bridge\insertsales\InsertSalesDiscmas.class
 com\bridge\insertstockonhand\InsertStockreservationpos.class
 com\bridge\routemerge\Posuser.class
 com\bridge\insertitem\InsertMnsizeset.class
@@ -69,6 +70,7 @@ com\bridge\insertdeposit\InsertBrgift.class
 com\bridge\main\MainItem.class
 com\bridge\routestockonhand\Stockreservationpos.class
 com\bridge\insertstockonhand\InsertStkholdingtrn.class
+com\bridge\routesales\SalesDiscmas.class
 com\bridge\insertgoodsreturn\InsertGrorgtender.class
 com\bridge\insertmerge\InsertCosegchdr.class
 com\bridge\main\MainGoodsreturn.class

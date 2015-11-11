@@ -28,7 +28,7 @@ public class InsertStockres {
             if (Objects.equals(frdatabase, "Oracle")) {
                 // dbConnection = Mssql.getDBConnection();
                 /*
-				HikariMssql Mssqlpool = HikariMssql.getInstance();
+                HikariMssql Mssqlpool = HikariMssql.getInstance();
 				dbConnection = Mssqlpool.getConnection();
 				*/
                 HikariMerge Mergepool = HikariMerge.getInstance();

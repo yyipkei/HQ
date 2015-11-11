@@ -20,7 +20,7 @@ public class Edcsettlement {
 	private static final Logger logger = Logger.getLogger(Edcsettlement.class);
 
 	public static void routeEdcsettlement(String dataupdatelog,
-			String entityname, String entitykey, String database)
+										  String entityname, String entitykey, String database)
 			throws SQLException {
 
 		String[] parts = entitykey.split(",");
@@ -28,33 +28,75 @@ public class Edcsettlement {
 		String loccode = parts[1];
 		String regno = parts[2];
 		String txno = parts[3];
+		String txamount = parts[4];
+		String bankhost = parts[5];
+		String settlestatus = parts[6];
 
 		Connection dbConnection = null;
 		PreparedStatement preparedStatement = null;
 
-		String selectSQL = "SELECT TX_DATE,LOC_CODE,REG_NO,TX_NO,TX_AMOUNT,SETTLE_DATE,BATCH_NO,BANK_HOST,"
-				+ "MERCH_NO,SETTLE_AMOUNT,STATUS,LAST_UPD_DT,LAST_UPD_VER,LAST_UPD_USR,"
-				+ "POS_EDC,LONG_SHORT,LONG_SHORT_AMT,VALUE_DAY,AUTO_MANUAL_FLAG "
-				+ "FROM EDC_SETTLEMENT "
-				+ "where tx_date ='"
-				+ txdate
-				+ "'"
-				+ "and LOC_CODE ='"
-				+ loccode
-				+ "'"
-				+ "and reg_no='"
-				+ regno
-				+ "'" + "and tx_no ='" + txno + "'"
-				+"Order BY LAST_UPD_DT";
+		String selectSQL = null;
 
 		try {
 			if (Objects.equals(database, "Oracle")) {
 				HikariQracleFrom OrcaleFrompool = HikariQracleFrom
 						.getInstance();
 				dbConnection = OrcaleFrompool.getConnection();
+				selectSQL="SELECT TX_DATE,LOC_CODE,REG_NO,TX_NO,TX_AMOUNT,SETTLE_DATE,BATCH_NO,BANK_HOST,"
+						+ "MERCH_NO,SETTLE_AMOUNT,STATUS,LAST_UPD_DT,LAST_UPD_VER,LAST_UPD_USR,"
+						+ "POS_EDC,LONG_SHORT,LONG_SHORT_AMT,VALUE_DAY,AUTO_MANUAL_FLAG "
+						+ "FROM EDC_SETTLEMENT "
+						+ "where TO_DATE(tx_date,'DD-MM-YY') ='"
+						+ txdate
+						+ "'"
+						+ "and LOC_CODE ='"
+						+ loccode
+						+ "'"
+						+ "and reg_no='"
+						+ regno
+						+ "'"
+						+ "and tx_no ='"
+						+ txno
+						+ "'"
+						+ "and tx_amount ='"
+						+ txamount
+						+ "'"
+						+ "and bank_host ='"
+						+ bankhost
+						+ "'"
+						+ "and status ='"
+						+ settlestatus
+						+ "'"
+						+"Order BY LAST_UPD_DT";
 			} else {
 				HikariMssql Mssqlpool = HikariMssql.getInstance();
 				dbConnection = Mssqlpool.getConnection();
+				selectSQL ="SELECT TX_DATE,LOC_CODE,REG_NO,TX_NO,TX_AMOUNT,SETTLE_DATE,BATCH_NO,BANK_HOST,"
+						+ "MERCH_NO,SETTLE_AMOUNT,STATUS,LAST_UPD_DT,LAST_UPD_VER,LAST_UPD_USR,"
+						+ "POS_EDC,LONG_SHORT,LONG_SHORT_AMT,VALUE_DAY,AUTO_MANUAL_FLAG "
+						+ "FROM EDC_SETTLEMENT "
+						+ "where tx_date ='"
+						+ txdate
+						+ "'"
+						+ "and LOC_CODE ='"
+						+ loccode
+						+ "'"
+						+ "and reg_no='"
+						+ regno
+						+ "'"
+						+ "and tx_no ='"
+						+ txno
+						+ "'"
+						+ "and tx_amount ='"
+						+ txamount
+						+ "'"
+						+ "and bank_host ='"
+						+ bankhost
+						+ "'"
+						+ "and status ='"
+						+ settlestatus
+						+ "'"
+						+"Order BY LAST_UPD_DT";
 			}
 
 			preparedStatement = dbConnection.prepareStatement(selectSQL);
@@ -106,7 +148,15 @@ public class Edcsettlement {
 								+ rsloccode
 								+ ","
 								+ rsregno
-								+ "'" + rstxno + "'");
+								+ "'"
+								+ rstxno
+								+ "'"
+								+ rstxamount
+								+ "'"
+								+ rsbankhost
+								+ "'"
+								+ rsstatus
+								+ "'");
 					} else {
 						logger.info("Insert Error");
 					}
@@ -137,16 +187,24 @@ public class Edcsettlement {
 								+ rsloccode
 								+ ","
 								+ rsregno
-								+ "'" + rstxno + "'");
+								+ "'"
+								+ rstxno
+								+ "'"
+								+ rstxamount
+								+ "'"
+								+ rsbankhost
+								+ "'"
+								+ rsstatus
+								+ "'");
 					} else {
 						logger.info("Update Error");
 					}
 					Logupdateresult.Updatelogresult(dataupdatelog, entityname,
 							Insertresult, database);
 
-                    if ((!"Oracle".equals(database)) && (Insertresult)) {
+                   /* if ((!"Oracle".equals(database)) && (Insertresult)) {
                         Insertdataupdatelog.Updatelogresult(entityname, entitykey);
-                    }
+                    }*/
 				}
 			}
 		} catch (SQLException e) {

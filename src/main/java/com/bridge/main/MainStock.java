@@ -8,6 +8,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+import com.bridge.SQL.MSSQL;
+import com.bridge.SQL.ORACLE;
 import org.apache.log4j.Logger;
 import org.quartz.DisallowConcurrentExecution;
 import org.quartz.Job;
@@ -46,8 +48,9 @@ public class MainStock implements Job {
 
 		dataupdatelogs.clear();
 		
-		try {
+		/*try {
 
+			runStoredProcedureStockreslastupddt("MSSQL");
 			runStoredProcedure("Merge");
 			selectRecordsFromTable("Merge");
 			for (Dataupdatelog dataupdatelog : dataupdatelogs)
@@ -56,6 +59,7 @@ public class MainStock implements Job {
 			processLog("Merge");
 			
 			runlogStoredProcedure("Oracle");
+			runpstxcountstockresStoredProcedure("Oracle");
 
 			logger.info("Finished Merge -> Oracle");
 
@@ -64,7 +68,7 @@ public class MainStock implements Job {
 			logger.info(e.getMessage());
 
 		}
-		dataupdatelogs.clear();
+		dataupdatelogs.clear();*/
 
 	}
 
@@ -161,18 +165,21 @@ public class MainStock implements Job {
 
 		Connection dbConnection = null;
 		PreparedStatement preparedStatement = null;
-		logger.info("Starting ");
-		String spSQL = "{call USP_DATA_UPDATE_LOG_POS_STOCK}";
+		logger.info("Starting StockResUpdDate");
+		//String spSQL = "{call USP_DATA_UPDATE_LOG_POS_STOCK}";
+		String spSQL = null;
 		try {
 
 			if (Objects.equals(database, "Oracle")) {
 				 HikariQracleFrom OrcaleFrompool = HikariQracleFrom.getInstance(); 
 				dbConnection = OrcaleFrompool.getConnection();
 				//dbConnection = OracleFrom.getDBConnection();
+				spSQL= ORACLE.StockResUpdDate;
 			} else {
 				 HikariMerge Mergepool = HikariMerge.getInstance();  
 				dbConnection = Mergepool.getConnection();  
 				//dbConnection = Merge.getDBConnection();
+				spSQL= MSSQL.StockResUpdDate;
 			}
 
 			preparedStatement = dbConnection.prepareStatement(spSQL);
@@ -200,8 +207,49 @@ public class MainStock implements Job {
 
 		Connection dbConnection = null;
 		PreparedStatement preparedStatement = null;
-		logger.info("Starting ");
-		String spSQL = "{call USP_DATA_UPDATE_LOG_STOCK}";
+		logger.info("Starting InsertStockResDataLog");
+		//String spSQL = "{call USP_DATA_UPDATE_LOG_STOCK}";
+		String spSQL = null;
+			try {
+
+			if (Objects.equals(database, "Oracle")) {
+				HikariQracleTo OrcaleTopool = HikariQracleTo.getInstance();
+				dbConnection = OrcaleTopool.getConnection();
+				//dbConnection = OracleFrom.getDBConnection();
+				spSQL =	ORACLE.InsertStockResDataLog;
+			} else {
+				 HikariMerge Mergepool = HikariMerge.getInstance();  
+				dbConnection = Mergepool.getConnection();  
+				//dbConnection = Merge.getDBConnection();
+			}
+
+			preparedStatement = dbConnection.prepareStatement(spSQL);
+			preparedStatement.executeUpdate();
+
+		} catch (SQLException e) {
+
+			logger.info(e.getMessage());
+
+		} finally {
+
+			if (preparedStatement != null) {
+				preparedStatement.close();
+			}
+
+			if (dbConnection != null) {
+				dbConnection.close();
+			}
+
+		}
+
+	}
+	private static void runStoredProcedureStockreslastupddt(String database) throws SQLException {
+
+		Connection dbConnection = null;
+		PreparedStatement preparedStatement = null;
+		logger.info("Starting usp_stockres_txn_last_upd_dt_batch ");
+		//String spSQL = "{call usp_stockres_txn_last_upd_dt_batch}";
+		String spSQL = null;
 		try {
 
 			if (Objects.equals(database, "Oracle")) {
@@ -209,9 +257,53 @@ public class MainStock implements Job {
 				dbConnection = OrcaleTopool.getConnection();
 				//dbConnection = OracleFrom.getDBConnection();
 			} else {
-				 HikariMerge Mergepool = HikariMerge.getInstance();  
-				dbConnection = Mergepool.getConnection();  
+				HikariMssql Mssqlpool = HikariMssql.getInstance();
+				dbConnection = Mssqlpool.getConnection();
 				//dbConnection = Merge.getDBConnection();
+				spSQL =MSSQL.StockResLastUpdDate;
+			}
+
+			preparedStatement = dbConnection.prepareStatement(spSQL);
+			preparedStatement.executeUpdate();
+
+		} catch (SQLException e) {
+
+			logger.info(e.getMessage());
+
+		} finally {
+
+			if (preparedStatement != null) {
+				preparedStatement.close();
+			}
+
+			if (dbConnection != null) {
+				dbConnection.close();
+			}
+
+		}
+
+	}
+
+	private static void runpstxcountstockresStoredProcedure(String database)
+			throws SQLException {
+
+		Connection dbConnection = null;
+		PreparedStatement preparedStatement = null;
+		logger.info("Starting USP_PS_TX_COUNT_STOCKRES ");
+		//String spSQL = "{call USP_PS_TX_COUNT_STOCKRES}";
+		String spSQL = null;
+		try {
+
+			if (Objects.equals(database, "Oracle")) {
+				HikariQracleTo OrcaleTopool = HikariQracleTo.getInstance();
+				dbConnection = OrcaleTopool.getConnection();
+				// dbConnection = OracleFrom.getDBConnection();
+				spSQL = ORACLE.StockResPsTxCount;
+			} else {
+				HikariMssql Mssqlpool = HikariMssql.getInstance();
+				dbConnection = Mssqlpool.getConnection();
+				// dbConnection = Mssql.getDBConnection();
+
 			}
 
 			preparedStatement = dbConnection.prepareStatement(spSQL);

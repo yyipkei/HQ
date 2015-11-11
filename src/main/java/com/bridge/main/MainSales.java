@@ -8,6 +8,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+import com.bridge.SQL.MSSQL;
+import com.bridge.SQL.ORACLE;
 import org.apache.log4j.Logger;
 import org.quartz.DisallowConcurrentExecution;
 import org.quartz.Job;
@@ -57,6 +59,7 @@ public class MainSales implements Job {
 			processLogmssql("MSSQL");
 			runlogStoredProcedure("Oracle");
 			runpstxcountStoredProcedure("Oracle");
+			rungoapstxcountStoredProcedure("Oracle");
 			logger.info("Finished MSSQL -> Oracle");
 
 		} catch (SQLException e) {
@@ -198,7 +201,9 @@ public class MainSales implements Job {
 		Connection dbConnection = null;
 		PreparedStatement preparedStatement = null;
 		logger.info("Starting usp_goa_txn_last_upd_dt_batch");
-		String spSQL = "{call usp_goa_txn_last_upd_dt_batch}";
+		//String spSQL = "{call usp_goa_txn_last_upd_dt_batch}";
+		String spSQL = MSSQL.GoaLastUpdDate;
+
 		try {
 
 			if (Objects.equals(database, "Oracle")) {
@@ -238,7 +243,8 @@ public class MainSales implements Job {
 		Connection dbConnection = null;
 		PreparedStatement preparedStatement = null;
 		logger.info("Starting usp_usp_txn_last_upd_dt_batch");
-		String spSQL = "{call usp_usp_txn_last_upd_dt_batch}";
+		//String spSQL = "{call usp_usp_txn_last_upd_dt_batch}";
+		String spSQL= MSSQL.SaleLastUpdDate;
 		try {
 
 			if (Objects.equals(database, "Oracle")) {
@@ -278,7 +284,8 @@ public class MainSales implements Job {
 		Connection dbConnection = null;
 		PreparedStatement preparedStatement = null;
 		logger.info("Starting USP_DATA_UPDATE_LOG_POS_SALES");
-		String spSQL = "{call USP_DATA_UPDATE_LOG_POS_SALES}";
+		//String spSQL = "{call USP_DATA_UPDATE_LOG_POS_SALES}";
+		String spSQL = null;
 		try {
 
 			if (Objects.equals(database, "Oracle")) {
@@ -286,10 +293,12 @@ public class MainSales implements Job {
 						.getInstance();
 				dbConnection = OrcaleFrompool.getConnection();
 				// dbConnection = OracleFrom.getDBConnection();
+				spSQL = ORACLE.SalesUpdate;
 			} else {
 				HikariMssql Mssqlpool = HikariMssql.getInstance();
 				dbConnection = Mssqlpool.getConnection();
 				// dbConnection = Mssql.getDBConnection();
+				spSQL = MSSQL.SalesUpdate;
 			}
 
 			preparedStatement = dbConnection.prepareStatement(spSQL);
@@ -319,7 +328,51 @@ public class MainSales implements Job {
 		Connection dbConnection = null;
 		PreparedStatement preparedStatement = null;
 		logger.info("Starting USP_DATA_UPDATE_LOG");
-		String spSQL = "{call USP_DATA_UPDATE_LOG}";
+		//String spSQL = "{call USP_DATA_UPDATE_LOG}";
+		String spSQL = null;
+		try {
+
+			if (Objects.equals(database, "Oracle")) {
+				HikariQracleTo OrcaleTopool = HikariQracleTo.getInstance();
+				dbConnection = OrcaleTopool.getConnection();
+				// dbConnection = OracleFrom.getDBConnection();
+				spSQL = ORACLE.InsertSalesDataLog;
+			} else {
+				HikariMssql Mssqlpool = HikariMssql.getInstance();
+				dbConnection = Mssqlpool.getConnection();
+				// dbConnection = Mssql.getDBConnection();
+				spSQL = MSSQL.InsertSalesDataLog;
+			}
+
+			preparedStatement = dbConnection.prepareStatement(spSQL);
+			preparedStatement.executeUpdate();
+
+		} catch (SQLException e) {
+
+			logger.info(e.getMessage());
+
+		} finally {
+
+			if (preparedStatement != null) {
+				preparedStatement.close();
+			}
+
+			if (dbConnection != null) {
+				dbConnection.close();
+			}
+
+		}
+
+	}
+
+	private static void runpstxcountStoredProcedure(String database)
+			throws SQLException {
+
+		Connection dbConnection = null;
+		PreparedStatement preparedStatement = null;
+		logger.info("Starting USP_PS_TX_COUNT ");
+		//String spSQL = "{call USP_PS_TX_COUNT}";
+		String spSQL = ORACLE.SalesPsTxCount;
 		try {
 
 			if (Objects.equals(database, "Oracle")) {
@@ -353,13 +406,14 @@ public class MainSales implements Job {
 
 	}
 
-	private static void runpstxcountStoredProcedure(String database)
+	private static void rungoapstxcountStoredProcedure(String database)
 			throws SQLException {
 
 		Connection dbConnection = null;
 		PreparedStatement preparedStatement = null;
-		logger.info("Starting USP_PS_TX_COUNT ");
-		String spSQL = "{call USP_PS_TX_COUNT}";
+		logger.info("Starting GOA USP_PS_TX_COUNT ");
+		//String spSQL = "{call USP_PS_TX_COUNT}";
+		String spSQL = ORACLE.GoaPsTxCount;
 		try {
 
 			if (Objects.equals(database, "Oracle")) {

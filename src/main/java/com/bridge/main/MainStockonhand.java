@@ -1,5 +1,6 @@
 package com.bridge.main;
 
+import com.bridge.SQL.MSSQL;
 import com.bridge.projo.Dataupdatelog;
 import org.apache.log4j.Logger;
 import org.quartz.DisallowConcurrentExecution;
@@ -154,8 +155,9 @@ public class MainStockonhand implements Job {
 
         Connection dbConnection = null;
         PreparedStatement preparedStatement = null;
-        logger.info("Starting ");
-        String spSQL = "{call USP_DATA_UPDATE_LOG_POS_SOH}";
+        logger.info("Starting USP_DATA_UPDATE_LOG_POS_SOH");
+        //String spSQL = "{call USP_DATA_UPDATE_LOG_POS_SOH}";
+        String spSQL =null;
         try {
 
             if (Objects.equals(database, "Oracle")) {
@@ -166,6 +168,7 @@ public class MainStockonhand implements Job {
                 HikariRms Rmspool = HikariRms.getInstance();
                 dbConnection = Rmspool.getConnection();
                 //dbConnection = Mssql.getDBConnection();
+                spSQL = MSSQL.StockOnHandUpdate;
             }
 
             preparedStatement = dbConnection.prepareStatement(spSQL);
@@ -189,7 +192,7 @@ public class MainStockonhand implements Job {
 
     }
 
-    private static void runlogStoredProcedure(String database) throws SQLException {
+   /* private static void runlogStoredProcedure(String database) throws SQLException {
 
         Connection dbConnection = null;
         PreparedStatement preparedStatement = null;
@@ -226,7 +229,7 @@ public class MainStockonhand implements Job {
 
         }
 
-    }
+    }*/
 
    //@Override
     public void execute(JobExecutionContext arg0) throws JobExecutionException {

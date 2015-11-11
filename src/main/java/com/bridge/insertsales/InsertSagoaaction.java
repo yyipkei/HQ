@@ -16,11 +16,11 @@ public class InsertSagoaaction {
 	private static final Logger logger = Logger.getLogger(InsertSagoaaction.class);
 
 	public static boolean Sagoaactioninsert(String rsrowid, String rstxdate,
-			String rsloccode, String rsregno, String rstxno, String rsseqno,
-			String rsactionqty, Timestamp rsactiondate, String rsaction,
-			String rsreleasecode, String rssalestxno, Timestamp rsmodifieddate,
-			String rsmodifiedby, String rsremark, Timestamp rslastupddt,
-			String frdatabase) throws SQLException {
+											String rsloccode, String rsregno, String rstxno, String rsseqno,
+											String rsactionqty, Timestamp rsactiondate, String rsaction,
+											String rsreleasecode, String rssalestxno, Timestamp rsmodifieddate,
+											String rsmodifiedby, String rsremark, Timestamp rslastupddt,
+											String frdatabase) throws SQLException {
 
 		boolean result = true;
 		Connection dbConnection = null;
@@ -33,13 +33,59 @@ public class InsertSagoaaction {
 
 				HikariMssql Mssqlpool = HikariMssql.getInstance();
 				dbConnection = Mssqlpool.getConnection();
+
+				String insertTableSQL = "INSERT INTO SAGOA_ACTION"
+						+ "(TX_DATE,LOC_CODE,REG_NO,TX_NO,SEQ_NO,ACTION_QTY,ACTION_DATE,ACTION,RELEASE_CODE,SALES_TX_NO,MODIFIED_DATE,MODIFIED_BY,REMARK,LAST_UPD_DT) "
+						+ "VALUES" + "(?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+
+				preparedStatement = dbConnection.prepareStatement(insertTableSQL);
+
+				preparedStatement.setString(1, rstxdate);
+				preparedStatement.setString(2, rsloccode);
+				preparedStatement.setString(3, rsregno);
+				preparedStatement.setString(4, rstxno);
+				preparedStatement.setString(5, rsseqno);
+				preparedStatement.setString(6, rsactionqty);
+				preparedStatement.setTimestamp(7, rsactiondate);
+				preparedStatement.setString(8, rsaction);
+				preparedStatement.setString(9, rsreleasecode);
+				preparedStatement.setString(10, rssalestxno);
+				preparedStatement.setTimestamp(11, rsmodifieddate);
+				preparedStatement.setString(12, rsmodifiedby);
+				preparedStatement.setString(13, rsremark);
+				preparedStatement.setTimestamp(14, rslastupddt);
+
 			} else {
 				// dbConnection = OracleTo.getDBConnection();
 
 				HikariQracleTo OrcaleFromTo = HikariQracleTo.getInstance();
 				dbConnection = OrcaleFromTo.getConnection();
+
+				String insertTableSQL = "INSERT INTO SAGOA_ACTION"
+						+ "(ROW_ID,TX_DATE,LOC_CODE,REG_NO,TX_NO,SEQ_NO,ACTION_QTY,ACTION_DATE,ACTION,RELEASE_CODE,SALES_TX_NO,MODIFIED_DATE,MODIFIED_BY,REMARK,LAST_UPD_DT) "
+						+ "VALUES" + "(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+
+				preparedStatement = dbConnection.prepareStatement(insertTableSQL);
+
+				preparedStatement.setString(1, rsrowid);
+				preparedStatement.setString(2, rstxdate);
+				preparedStatement.setString(3, rsloccode);
+				preparedStatement.setString(4, rsregno);
+				preparedStatement.setString(5, rstxno);
+				preparedStatement.setString(6, rsseqno);
+				preparedStatement.setString(7, rsactionqty);
+				preparedStatement.setTimestamp(8, rsactiondate);
+				preparedStatement.setString(9, rsaction);
+				preparedStatement.setString(10, rsreleasecode);
+				preparedStatement.setString(11, rssalestxno);
+				preparedStatement.setTimestamp(12, rsmodifieddate);
+				preparedStatement.setString(13, rsmodifiedby);
+				preparedStatement.setString(14, rsremark);
+				preparedStatement.setTimestamp(15, rslastupddt);
+
 			}
 
+			/*
 			String insertTableSQL = "INSERT INTO SAGOA_ACTION"
 					+ "(ROW_ID,TX_DATE,LOC_CODE,REG_NO,TX_NO,SEQ_NO,ACTION_QTY,ACTION_DATE,ACTION,RELEASE_CODE,SALES_TX_NO,MODIFIED_DATE,MODIFIED_BY,REMARK,LAST_UPD_DT) "
 					+ "VALUES" + "(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
@@ -61,7 +107,7 @@ public class InsertSagoaaction {
 			preparedStatement.setString(13, rsmodifiedby);
 			preparedStatement.setString(14, rsremark);
 			preparedStatement.setTimestamp(15, rslastupddt);
-
+*/
 			preparedStatement.executeUpdate();
 			return result;
 
@@ -85,11 +131,11 @@ public class InsertSagoaaction {
 	}
 
 	public static boolean Sagoaactionupdate(String rsrowid, String rstxdate,
-			String rsloccode, String rsregno, String rstxno, String rsseqno,
-			String rsactionqty, Timestamp rsactiondate, String rsaction,
-			String rsreleasecode, String rssalestxno, Timestamp rsmodifieddate,
-			String rsmodifiedby, String rsremark, Timestamp rslastupddt,
-			String frdatabase) throws SQLException {
+											String rsloccode, String rsregno, String rstxno, String rsseqno,
+											String rsactionqty, Timestamp rsactiondate, String rsaction,
+											String rsreleasecode, String rssalestxno, Timestamp rsmodifieddate,
+											String rsmodifiedby, String rsremark, Timestamp rslastupddt,
+											String frdatabase) throws SQLException {
 
 		boolean result = true;
 		Connection dbConnection = null;
@@ -108,7 +154,7 @@ public class InsertSagoaaction {
 				HikariQracleTo OrcaleFromTo = HikariQracleTo.getInstance();
 				dbConnection = OrcaleFromTo.getConnection();
 			}
-			
+
 			String updateSQL = "UPDATE SAGOA_ACTION "
 					+ "SET  ACTION_QTY    = ? " + ", ACTION_DATE   = ? "
 					+ ", ACTION        = ? " + ", RELEASE_CODE  = ? "
@@ -164,7 +210,7 @@ public class InsertSagoaaction {
 	}
 
 	public static boolean Sagoaactionchkexists(String entitykey,
-			String frdatabase) throws SQLException {
+											   String frdatabase) throws SQLException {
 
 		String[] parts = entitykey.split(",");
 		String txdate = parts[0];
@@ -172,7 +218,6 @@ public class InsertSagoaaction {
 		String regno = parts[2];
 		String txno = parts[3];
 		String seqno = parts[4];
-		String rowid = parts[5];
 
 		boolean result = false;
 		Connection dbConnection = null;
@@ -196,7 +241,7 @@ public class InsertSagoaaction {
 					+ "where tx_date ='" + txdate + "'" + "and LOC_CODE ='"
 					+ loccode + "'" + "and reg_no='" + regno + "'"
 					+ "and tx_no ='" + txno + "'" + "and seq_no ='" + seqno
-					+ "'" + "and ROW_ID ='" + rowid + "'";
+					+ "'";
 
 			// logger.info(selectSQL);
 

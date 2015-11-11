@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+import com.bridge.SQL.MSSQL;
 import org.apache.log4j.Logger;
 import org.quartz.DisallowConcurrentExecution;
 import org.quartz.Job;
@@ -164,7 +165,8 @@ public class MainItem implements Job {
 		Connection dbConnection = null;
 		PreparedStatement preparedStatement = null;
 		logger.info("Starting ");
-		String spSQL = "{call USP_DATA_UPDATE_LOG_POS_ITEM}";
+		//String spSQL = "{call USP_DATA_UPDATE_LOG_POS_ITEM}";
+		String spSQL = null;
 		try {
 
 			if (Objects.equals(database, "Oracle")) {
@@ -175,6 +177,7 @@ public class MainItem implements Job {
 				HikariRms Rmspool = HikariRms.getInstance();
 				dbConnection = Rmspool.getConnection();
 				//dbConnection = RMS.getDBConnection();
+				spSQL = MSSQL.ItemUpdate;
 			}
 
 			preparedStatement = dbConnection.prepareStatement(spSQL);
@@ -198,11 +201,11 @@ public class MainItem implements Job {
 
 	}
 
-	private static void runlogStoredProcedure(String database) throws SQLException {
+	/*private static void runlogStoredProcedure(String database) throws SQLException {
 
 		Connection dbConnection = null;
 		PreparedStatement preparedStatement = null;
-		logger.info("Starting ");
+		logger.info("Starting USP_DATA_UPDATE_LOG_ITEM");
 		String spSQL = "{call USP_DATA_UPDATE_LOG_ITEM}";
 		try {
 
@@ -235,6 +238,6 @@ public class MainItem implements Job {
 
 		}
 
-	}
+	}*/
 
 }

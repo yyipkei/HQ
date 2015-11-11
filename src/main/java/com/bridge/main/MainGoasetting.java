@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+import com.bridge.SQL.MSSQL;
 import org.apache.log4j.Logger;
 import org.quartz.DisallowConcurrentExecution;
 import org.quartz.Job;
@@ -160,18 +161,21 @@ public class MainGoasetting implements Job {
 
 		Connection dbConnection = null;
 		PreparedStatement preparedStatement = null;
-		logger.info("Starting ");
-		String spSQL = "{call USP_DATA_UPDATE_LOG_POS_GOASET}";
+		logger.info("Starting GoaSettingUpdDate");
+		//String spSQL = "{call USP_DATA_UPDATE_LOG_POS_GOASET}";
+		String spSQL = null;
 		try {
 
 			if (Objects.equals(database, "Oracle")) {
 				 HikariQracleFrom OrcaleFrompool = HikariQracleFrom.getInstance(); 
 				dbConnection = OrcaleFrompool.getConnection();
 				//dbConnection = OracleFrom.getDBConnection();
+				//spSQL = MSSQL.GoaSettingUpdDate;
 			} else {
 				 HikariMssql Mssqlpool = HikariMssql.getInstance();  
 				dbConnection = Mssqlpool.getConnection();  
 				//dbConnection = Mssql.getDBConnection();
+				spSQL = MSSQL.GoaSettingUpdDate;
 			}
 
 			preparedStatement = dbConnection.prepareStatement(spSQL);
@@ -195,7 +199,7 @@ public class MainGoasetting implements Job {
 
 	}
 
-	private static void runlogStoredProcedure(String database)
+	/*private static void runlogStoredProcedure(String database)
 			throws SQLException {
 
 		Connection dbConnection = null;
@@ -234,6 +238,6 @@ public class MainGoasetting implements Job {
 
 		}
 
-	}
+	}*/
 
 }

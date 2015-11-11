@@ -8,6 +8,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+import com.bridge.SQL.MSSQL;
+import com.bridge.SQL.ORACLE;
 import org.apache.log4j.Logger;
 import org.quartz.DisallowConcurrentExecution;
 import org.quartz.Job;
@@ -161,17 +163,20 @@ public class MainGoodsreturn implements Job {
 		Connection dbConnection = null;
 		PreparedStatement preparedStatement = null;
 		logger.info("Starting USP_DATA_UPDATE_LOG_POS_RETURN");
-		String spSQL = "{call USP_DATA_UPDATE_LOG_POS_RETURN}";
+		//String spSQL = "{call USP_DATA_UPDATE_LOG_POS_RETURN}";
+		String spSQL = null;
 		try {
 
 			if (Objects.equals(database, "Oracle")) {
 				 HikariQracleFrom OrcaleFrompool = HikariQracleFrom.getInstance(); 
 				dbConnection = OrcaleFrompool.getConnection();
 				//dbConnection = OracleFrom.getDBConnection();
+				spSQL = ORACLE.ReturnUpdate;
 			} else {
 				 HikariMerge Mergepool = HikariMerge.getInstance();  
 				dbConnection = Mergepool.getConnection();  
 				//dbConnection = Merge.getDBConnection();
+				spSQL = MSSQL.ReturnUpdate;
 			}
 
 			preparedStatement = dbConnection.prepareStatement(spSQL);
@@ -195,7 +200,7 @@ public class MainGoodsreturn implements Job {
 
 	}
 
-	private static void runlogStoredProcedure(String database)
+	/*private static void runlogStoredProcedure(String database)
 			throws SQLException {
 
 		Connection dbConnection = null;
@@ -233,6 +238,6 @@ public class MainGoodsreturn implements Job {
 
 		}
 
-	}
+	}*/
 
 }

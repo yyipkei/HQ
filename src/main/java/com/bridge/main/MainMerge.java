@@ -8,6 +8,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+import com.bridge.SQL.MSSQL;
+import com.bridge.SQL.ORACLE;
 import org.apache.log4j.Logger;
 import org.quartz.DisallowConcurrentExecution;
 import org.quartz.Job;
@@ -47,6 +49,7 @@ public class MainMerge implements Job {
 
 		/*try {
 
+			runStoredProcedureMergelastupddt("MSSQL");
 			runStoredProcedure("Merge");
 			selectRecordsFromTable("Merge");
 			for (Dataupdatelog dataupdatelog : dataupdatelogs)
@@ -161,17 +164,20 @@ public class MainMerge implements Job {
 		Connection dbConnection = null;
 		PreparedStatement preparedStatement = null;
 		logger.info("Starting USP_DATA_UPDATE_LOG_POS_MERGE");
-		String spSQL = "{call USP_DATA_UPDATE_LOG_POS_MERGE}";
+		//String spSQL = "{call USP_DATA_UPDATE_LOG_POS_MERGE}";
+		String spSQL = null;
 		try {
 
 			if (Objects.equals(database, "Oracle")) {
 				 HikariQracleFrom OrcaleFrompool = HikariQracleFrom.getInstance(); 
 				dbConnection = OrcaleFrompool.getConnection();
 				//dbConnection = OracleFrom.getDBConnection();
+				spSQL = ORACLE.MergeUpdate;
 			} else {
 				 HikariMerge Mergepool = HikariMerge.getInstance();  
 				dbConnection = Mergepool.getConnection();  
 				//dbConnection = Merge.getDBConnection();
+				spSQL = MSSQL.MergeUpdate;
 			}
 
 			preparedStatement = dbConnection.prepareStatement(spSQL);
@@ -201,7 +207,8 @@ public class MainMerge implements Job {
 		Connection dbConnection = null;
 		PreparedStatement preparedStatement = null;
 		logger.info("Starting usp_data_update_log_merge");
-		String spSQL = "{call usp_data_update_log_merge}";
+		//String spSQL = "{call usp_data_update_log_merge}";
+		String spSQL = ORACLE.InsertMergeDataLog;
 		try {
 
 			if (Objects.equals(database, "Oracle")) {
@@ -240,12 +247,54 @@ public class MainMerge implements Job {
 		Connection dbConnection = null;
 		PreparedStatement preparedStatement = null;
 		logger.info("Starting USP_PS_TX_COUNT_COUPON ");
-		String spSQL = "{call USP_PS_TX_COUNT_COUPON}";
+		//String spSQL = "{call USP_PS_TX_COUNT_COUPON}";
+		String spSQL = ORACLE.CouponPsTxCount;
 		try {
 
 			if (Objects.equals(database, "Oracle")) {
 				HikariQracleTo OrcaleTopool = HikariQracleTo.getInstance();
 				dbConnection = OrcaleTopool.getConnection();
+				// dbConnection = OracleFrom.getDBConnection();
+			} else {
+				HikariMssql Mssqlpool = HikariMssql.getInstance();
+				dbConnection = Mssqlpool.getConnection();
+				// dbConnection = Mssql.getDBConnection();
+			}
+
+			preparedStatement = dbConnection.prepareStatement(spSQL);
+			preparedStatement.executeUpdate();
+
+		} catch (SQLException e) {
+
+			logger.info(e.getMessage());
+
+		} finally {
+
+			if (preparedStatement != null) {
+				preparedStatement.close();
+			}
+
+			if (dbConnection != null) {
+				dbConnection.close();
+			}
+
+		}
+
+	}
+
+	private static void runStoredProcedureMergelastupddt(String database) throws SQLException {
+
+		Connection dbConnection = null;
+		PreparedStatement preparedStatement = null;
+		logger.info("Starting usp_merge_txn_last_upd_dt_batch");
+		//String spSQL = "{call usp_merge_txn_last_upd_dt_batch}";
+		String spSQL = MSSQL.CafeLastUpdDate;
+		try {
+
+			if (Objects.equals(database, "Oracle")) {
+				HikariQracleFrom OrcaleFrompool = HikariQracleFrom
+						.getInstance();
+				dbConnection = OrcaleFrompool.getConnection();
 				// dbConnection = OracleFrom.getDBConnection();
 			} else {
 				HikariMssql Mssqlpool = HikariMssql.getInstance();

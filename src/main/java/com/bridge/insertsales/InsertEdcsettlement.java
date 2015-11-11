@@ -18,12 +18,12 @@ public class InsertEdcsettlement {
 			.getLogger(InsertEdcsettlement.class);
 
 	public static boolean Edcsettlementinsert(Timestamp rstxdate,
-			String rsloccode, String rsregno, String rstxno, String rstxamount,
-			Timestamp rssettledate, String rsbatchno, String rsbankhost,
-			String rsmerchno, String rssettleamount, String rsstatus,
-			Timestamp rslastupddt, String rslastupdver, String rslastupdusr,
-			String rsposedc, String rslongshort, String rslongshortamt,
-			String rsvalueday, String rsautomanualflag, String frdatabase)
+											  String rsloccode, String rsregno, String rstxno, String rstxamount,
+											  Timestamp rssettledate, String rsbatchno, String rsbankhost,
+											  String rsmerchno, String rssettleamount, String rsstatus,
+											  Timestamp rslastupddt, String rslastupdver, String rslastupdusr,
+											  String rsposedc, String rslongshort, String rslongshortamt,
+											  String rsvalueday, String rsautomanualflag, String frdatabase)
 			throws SQLException {
 
 		boolean result = true;
@@ -95,12 +95,12 @@ public class InsertEdcsettlement {
 	}
 
 	public static boolean Edcsettlementupdate(Timestamp rstxdate,
-			String rsloccode, String rsregno, String rstxno, String rstxamount,
-			Timestamp rssettledate, String rsbatchno, String rsbankhost,
-			String rsmerchno, String rssettleamount, String rsstatus,
-			Timestamp rslastupddt, String rslastupdver, String rslastupdusr,
-			String rsposedc, String rslongshort, String rslongshortamt,
-			String rsvalueday, String rsautomanualflag, String frdatabase)
+											  String rsloccode, String rsregno, String rstxno, String rstxamount,
+											  Timestamp rssettledate, String rsbatchno, String rsbankhost,
+											  String rsmerchno, String rssettleamount, String rsstatus,
+											  Timestamp rslastupddt, String rslastupdver, String rslastupdusr,
+											  String rsposedc, String rslongshort, String rslongshortamt,
+											  String rsvalueday, String rsautomanualflag, String frdatabase)
 			throws SQLException {
 
 		boolean result = true;
@@ -183,13 +183,16 @@ public class InsertEdcsettlement {
 	}
 
 	public static boolean Edcsettlementchkexists(String entitykey,
-			String frdatabase) throws SQLException {
+												 String frdatabase) throws SQLException {
 
 		String[] parts = entitykey.split(",");
 		String txdate = parts[0];
 		String loccode = parts[1];
 		String regno = parts[2];
 		String txno = parts[3];
+		String txamount = parts[4];
+		String bankhost = parts[5];
+		String settlestatus = parts[6];
 
 		boolean result = false;
 		Connection dbConnection = null;
@@ -207,7 +210,15 @@ public class InsertEdcsettlement {
 				selectSQL = "SELECT LOC_CODE " + "FROM EDC_SETTLEMENT "
 						+ "where tx_date ='" + txdate + "'" + "and LOC_CODE ='"
 						+ loccode + "'" + "and reg_no='" + regno + "'"
-						+ "and tx_no ='" + txno + "'";
+						+ "and tx_no ='" + txno + "'"+ "and tx_amount ='"
+						+ txamount
+						+ "'"
+						+ "and bank_host ='"
+						+ bankhost
+						+ "'"
+						+ "and status ='"
+						+ settlestatus
+						+ "'";
 
 			} else {
 				// dbConnection = OracleTo.getDBConnection();
@@ -218,7 +229,15 @@ public class InsertEdcsettlement {
 						+ "where tx_date =to_date(substr('" + txdate
 						+ "',1,19), 'yyyy-mm-dd hh24:mi:ss')"
 						+ " and LOC_CODE ='" + loccode + "'" + "and reg_no='"
-						+ regno + "'" + "and tx_no ='" + txno + "'";
+						+ regno + "'" + "and tx_no ='" + txno + "'" + "and tx_amount ='"
+						+ txamount
+						+ "'"
+						+ "and bank_host ='"
+						+ bankhost
+						+ "'"
+						+ "and status ='"
+						+ settlestatus
+						+ "'";
 
 			}
 

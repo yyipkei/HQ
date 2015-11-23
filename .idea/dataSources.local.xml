@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="QA - Oracle - BRIDFEFR" uuid="bfcb1cab-427b-45f3-9fc5-e15fa1f120ec" />
-    <data-source name="QA - Oracle - BRIDGE" uuid="ffc68113-a604-4eda-b477-f4b36a2f6df7" />
+    <data-source name="QA - Oracle - BRIDFEFR" uuid="bfcb1cab-427b-45f3-9fc5-e15fa1f120ec">
+      <user-name>BRIDGE</user-name>
+    </data-source>
+    <data-source name="QA - Oracle - BRIDGE" uuid="ffc68113-a604-4eda-b477-f4b36a2f6df7">
+      <user-name>BRIDGE</user-name>
+    </data-source>
     <data-source name="SQL Server - posdb@HKCT5L" uuid="05b32995-a463-466f-aa48-23fbe4128da1">
       <user-name>sysadmin</user-name>
       <user-password>dfc9dfc2dfc5dfc9dfc5dfcb</user-password>

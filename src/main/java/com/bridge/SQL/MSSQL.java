@@ -20,6 +20,7 @@ public class MSSQL {
     public static String StaffPurchaseUpdate;
     public static String StockOnHandUpdate;
     public static String VipUpdate;
+    public static String retryMSSQLFailRecord;
 
     static {
         SalesUpdate = "DECLARE @log_dt DATETIME\n" +
@@ -95,7 +96,7 @@ public class MSSQL {
                 "\t\t\tAND @log_dt\n" +
                 "\t\tAND last_upd_dt > @LAST_SYNC_TIME\n" +
                 "\t\tAND reg_no NOT BETWEEN '500'\n" +
-                "\t\t\tAND '699';\n" +
+                "\t\t\tAND '950';\n" +
                 "\n" +
                 "\tINSERT INTO DATA_UPDATE_LOG_POS_SYNC (\n" +
                 "\t\tremark\n" +
@@ -6249,6 +6250,9 @@ public class MSSQL {
                 "\tSELECT 'pr_vip_mas'\n" +
                 "\t\t,@log_dt\n" +
                 "END";
+
+        retryMSSQLFailRecord="UPDATE DATA_UPDATE_LOG_POS set is_comp ='P'\n" +
+                "where ENTITY_KEY ='N' and LOG_DT BETWEEN getdate() -3 and getdate()\n";
     }
 
 }

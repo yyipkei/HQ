@@ -50,7 +50,7 @@ public class Dphdr {
 				+ "and DP_NO ='"
 				+ dpno
 				+ "'" + "and ISSUE_LOC_CODE ='" + issueloccode + "'"
-				+"Order BY LAST_UPD_DT";
+				+"Order BY LAST_UPD_DT,Balance desc";
 
 		// List<Dphdr> Dphdrs = new ArrayList<Dphdr>();
 

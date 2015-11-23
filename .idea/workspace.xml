@@ -4,281 +4,16 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be89e70a-455d-4820-9888-ee5c3c9dd1bf" name="Default" comment="Kei">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/bridge/SQL/MSSQL.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/bridge/SQL/ORACLE.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/BridgeLC-1.0-SNAPSHOT.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertdeposit/InsertBrdpdet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertdeposit/InsertBrdphdr.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertdeposit/InsertBrgift.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertdeposit/InsertBrguest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertdeposit/InsertBrreg.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertdeposit/InsertDpdet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertdeposit/InsertDphdr.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertdeposit/InsertDppayment.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertdeposit/InsertPreselldpvip.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertdeposit/InsertPresellitem.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertdeposit/InsertPresellitemstatus.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertgoasetting/InsertGoadept.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertgoasetting/InsertGoapurpose.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertgoasetting/InsertGoapurposestaff.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertgoasetting/InsertGoastaff.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertgoasetting/InsertGoastafflimithdr.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertgoasetting/InsertGoatc.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertgoodsreturn/InsertGrorgdet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertgoodsreturn/InsertGrorgtender.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertitem/InsertBrand.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertitem/InsertBu.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertitem/InsertClass.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertitem/InsertColor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertitem/InsertDept.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertitem/InsertDiscmas.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertitem/InsertDummysku.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertitem/InsertItemmas.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertitem/InsertMnseason.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertitem/InsertMnsizeset.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertitem/InsertMnstaffcard.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertitem/InsertMnvendorupc.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertitem/InsertPmprompresalesdiscount.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertitem/InsertPresalemas.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertitem/InsertSize.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertitem/InsertStylmasele.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertitem/InsertStylmasservice.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertitem/InsertTendmas.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertmerge/InsertCafecoupondet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertmerge/InsertCafecouponhdr.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertmerge/InsertCosegcdet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertmerge/InsertCosegchdr.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertmerge/InsertParkpmt.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertmerge/InsertPosuser.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertmerge/InsertReason.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertmerge/InsertSagoatxn.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertmerge/InsertSastafftxn.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertmerge/InsertSastafftxncl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertmerge/InsertVwpdtl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertmerge/InsertXratemas.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertmerge/InsertXrateoverrideuser.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertsales/InsertDktprtdet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertsales/InsertDphdrdesc.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertsales/InsertEdcsettlement.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertsales/InsertHostsettlement.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertsales/InsertPmmemomap.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertsales/InsertSacard.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertsales/InsertSadelivery.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertsales/InsertSadesc.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertsales/InsertSadet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertsales/InsertSadiscref.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertsales/InsertSagoaaction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertsales/InsertSagoadet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertsales/InsertSagoahdr.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertsales/InsertSagoastaff.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertsales/InsertSagwp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertsales/InsertSahdr.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertsales/InsertSaitdisc.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertsales/InsertSalesDiscmas.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertsales/InsertSamritem.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertsales/InsertSaonlineshop.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertsales/InsertSareason.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertsales/InsertSaserial.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertsales/InsertSastaff.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertsales/InsertSastaffitem.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertsales/InsertSatender.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertsales/InsertSatxdisc.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertsales/InsertSavwp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertstaffpurchase/InsertSastaffdiscdtl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertstaffpurchase/InsertSastaffdiscdtlcl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertstaffpurchase/InsertSastaffdiscexcept.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertstaffpurchase/InsertSastaffdiscexceptcl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertstaffpurchase/InsertSastaffdischdr.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertstaffpurchase/InsertSastaffdischdrcl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertstaffpurchase/InsertStaffpurchase.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertstaffpurchase/InsertStaffpurchasecl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertstockonhand/InsertInvwrioffdtlpos.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertstockonhand/InsertInvwrioffhdrpos.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertstockonhand/InsertStkholdingtrn.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertstockonhand/InsertStkledgerbydaypos.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertstockonhand/InsertStkledgerpossummarypos.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertstockonhand/InsertStkledgertrnpos.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertstockonhand/InsertStockreservationpos.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertstockonhand/InsertSxboxpos.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertstockonhand/InsertSxitempos.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertstockonhand/InsertSxsreqdtlpos.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertstockonhand/InsertSxsreqhdrpos.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertstockres/InsertStockres.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertstockres/InsertStockresdet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/insertvip/InsertPrvipmas.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/main/HikariMerge.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/main/HikariMssql.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/main/HikariQracleFrom.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/main/HikariQracleTo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/main/HikariRms.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/main/MainDeposit.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/main/MainGoasetting.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/main/MainGoodsreturn.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/main/MainItem.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/main/MainMerge.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/main/MainSales.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/main/MainStaffpurchase.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/main/MainStock.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/main/MainStockonhand.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/main/MainVip.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/main/Quartz.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/main/RouteDeposit.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/main/RouteGoasetting.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/main/RouteGoodsreturn.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/main/RouteItem.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/main/RouteMerge.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/main/RouteSales.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/main/RouteStaffpurchase.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/main/RouteStock.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/main/RouteStockonhand.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/main/RouteVip.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/projo/Dataupdatelog.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/result/Insertdataupdatelog.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/result/Logupdateresult.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routedeposit/Brdpdet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routedeposit/Brdphdr.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routedeposit/Brgift.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routedeposit/Brguest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routedeposit/Brreg.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routedeposit/Dpdet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routedeposit/Dphdr.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routedeposit/Dppayment.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routedeposit/Preselldpvip.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routedeposit/Presellitem.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routedeposit/Presellitemstatus.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routegoasetting/Goadept.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routegoasetting/Goapurpose.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routegoasetting/Goapurposestaff.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routegoasetting/Goastaff.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routegoasetting/Goastafflimithdr.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routegoasetting/Goatc.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routegoodsreturn/Grorgdet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routegoodsreturn/Grorgtender.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routeitem/Brand.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routeitem/Bu.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routeitem/Class.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routeitem/Color.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routeitem/Dept.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routeitem/Discmas.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routeitem/Dummysku.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routeitem/Itemmas.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routeitem/Mnseason.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routeitem/Mnsizeset.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routeitem/Mnstaffcard.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routeitem/Mnvendorupc.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routeitem/Pmprompresalesdiscount.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routeitem/Presalemas.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routeitem/Size.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routeitem/Stylmasele.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routeitem/Stylmasservice.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routeitem/Tendmas.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routemerge/Cafecoupondet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routemerge/Cafecouponhdr.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routemerge/Cosegcdet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routemerge/Cosegchdr.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routemerge/Parkpmt.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routemerge/Posuser.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routemerge/Reason.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routemerge/Sagoatxn.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routemerge/Sastafftxn.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routemerge/Sastafftxncl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routemerge/Vwpdtl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routemerge/Xratemas.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routemerge/Xrateoverrideuser.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routesales/Dktprtdet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routesales/Dphdrdesc.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routesales/Edcsettlement.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routesales/Hostsettlement.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routesales/Pmmemomap.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routesales/Sacard.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routesales/Sadelivery.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routesales/Sadesc.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routesales/Sadet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routesales/Sadiscref.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routesales/Sagoaaction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routesales/Sagoadet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routesales/Sagoahdr.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routesales/Sagoastaff.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routesales/Sagwp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routesales/Sahdr.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routesales/Saitdisc.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routesales/SalesDiscmas.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routesales/Samritem.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routesales/Saonlineshop.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routesales/Sareason.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routesales/Saserial.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routesales/Sastaff.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routesales/Sastaffitem.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routesales/Satender.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routesales/Satxdisc.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routesales/Savwp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routestaffpurchase/Sastaffdiscdtl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routestaffpurchase/Sastaffdiscdtlcl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routestaffpurchase/Sastaffdiscexcept.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routestaffpurchase/Sastaffdiscexceptcl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routestaffpurchase/Sastaffdischdr.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routestaffpurchase/Sastaffdischdrcl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routestaffpurchase/Staffpurchase.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routestaffpurchase/Staffpurchasecl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routestockonhand/Invwrioffdtlpos.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routestockonhand/Invwrioffhdrpos.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routestockonhand/Stkholdingtrn.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routestockonhand/Stkledgerbydaypos.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routestockonhand/Stkledgerpossummarypos.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routestockonhand/Stkledgertrnpos.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routestockonhand/Stockreservationpos.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routestockonhand/Sxboxpos.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routestockonhand/Sxitempos.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routestockonhand/Sxsreqdtlpos.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routestockonhand/Sxsreqhdrpos.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routestockres/Stockres.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routestockres/Stockresdet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/routevip/Prvipmas.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bridge/servlet/bridgeServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/log4j.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/quartz.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lib/HikariCP-java6-2.3.8.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lib/c3p0-0.9.1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lib/javassist-3.18.2-GA.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lib/javax.servlet-api-3.0.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lib/jtds-1.3.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lib/log4j-1.2.17.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lib/log4j-api-2.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lib/log4j-core-2.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lib/ojdbc6-11.2.0.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lib/quartz-2.2.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lib/quartz-jobs-2.2.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lib/servlet-api-2.5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lib/slf4j-api-1.7.5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lib/slf4j-log4j12-1.7.5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lib/slf4j-simple-1.6.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lib/surefire-api-2.10.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lib/surefire-junit3-2.10.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+    <list default="true" id="be89e70a-455d-4820-9888-ee5c3c9dd1bf" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bridge/insertsales/InsertEdcsettlement.java" afterPath="$PROJECT_DIR$/src/main/java/com/bridge/insertsales/InsertEdcsettlement.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bridge/insertsales/InsertSagoaaction.java" afterPath="$PROJECT_DIR$/src/main/java/com/bridge/insertsales/InsertSagoaaction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bridge/insertstockres/InsertStockres.java" afterPath="$PROJECT_DIR$/src/main/java/com/bridge/insertstockres/InsertStockres.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bridge/main/MainDeposit.java" afterPath="$PROJECT_DIR$/src/main/java/com/bridge/main/MainDeposit.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bridge/main/MainGoasetting.java" afterPath="$PROJECT_DIR$/src/main/java/com/bridge/main/MainGoasetting.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bridge/main/MainGoodsreturn.java" afterPath="$PROJECT_DIR$/src/main/java/com/bridge/main/MainGoodsreturn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bridge/main/MainItem.java" afterPath="$PROJECT_DIR$/src/main/java/com/bridge/main/MainItem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bridge/main/MainMerge.java" afterPath="$PROJECT_DIR$/src/main/java/com/bridge/main/MainMerge.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bridge/main/MainSales.java" afterPath="$PROJECT_DIR$/src/main/java/com/bridge/main/MainSales.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bridge/main/MainStaffpurchase.java" afterPath="$PROJECT_DIR$/src/main/java/com/bridge/main/MainStaffpurchase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bridge/main/MainStock.java" afterPath="$PROJECT_DIR$/src/main/java/com/bridge/main/MainStock.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bridge/main/MainStockonhand.java" afterPath="$PROJECT_DIR$/src/main/java/com/bridge/main/MainStockonhand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bridge/main/MainVip.java" afterPath="$PROJECT_DIR$/src/main/java/com/bridge/main/MainVip.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bridge/routesales/Edcsettlement.java" afterPath="$PROJECT_DIR$/src/main/java/com/bridge/routesales/Edcsettlement.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bridge/routesales/Sagoaaction.java" afterPath="$PROJECT_DIR$/src/main/java/com/bridge/routesales/Sagoaaction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bridge/SQL/MSSQL.java" afterPath="$PROJECT_DIR$/src/main/java/com/bridge/SQL/MSSQL.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bridge/SQL/ORACLE.java" afterPath="$PROJECT_DIR$/src/main/java/com/bridge/SQL/ORACLE.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bridge/main/Quartz.java" afterPath="$PROJECT_DIR$/src/main/java/com/bridge/main/Quartz.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bridge/routedeposit/Dphdr.java" afterPath="$PROJECT_DIR$/src/main/java/com/bridge/routedeposit/Dphdr.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bridge/routesales/Sahdr.java" afterPath="$PROJECT_DIR$/src/main/java/com/bridge/routesales/Sahdr.java" />
     </list>
     <list id="86db904c-73e0-4269-acaf-ad01df6dbce7" name="Kei (cherry picked from commit 6fd0acc)" comment="Kei&#10;(cherry picked from commit 6fd0acc)" />
     <ignored path="BridgeLC.iws" />
@@ -325,22 +60,66 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="InsertPrvipmas.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/insertvip/InsertPrvipmas.java">
+      <file leaf-file-name="ORACLE.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/SQL/ORACLE.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.030050084">
-              <caret line="422" column="62" selection-start-line="422" selection-start-column="62" selection-end-line="422" selection-end-column="62" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Prvipmas.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/routevip/Prvipmas.java">
+      <file leaf-file-name="MainPatch.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/main/MainPatch.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="208" column="46" selection-start-line="208" selection-start-column="46" selection-end-line="208" selection-end-column="46" />
+              <caret line="56" column="66" selection-start-line="56" selection-start-column="66" selection-end-line="56" selection-end-column="66" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Brand.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/routeitem/Brand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.32380953">
+              <caret line="26" column="76" selection-start-line="26" selection-start-column="76" selection-end-line="26" selection-end-column="76" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dataupdatelog.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/projo/Dataupdatelog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="79" column="30" selection-start-line="79" selection-start-column="30" selection-end-line="79" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MSSQL.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/SQL/MSSQL.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="6227" column="22" selection-start-line="6227" selection-start-column="22" selection-end-line="6227" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Quartz.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/main/Quartz.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="165" column="41" selection-start-line="165" selection-start-column="40" selection-end-line="165" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -376,6 +155,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/main/java/com/bridge/insertvip/InsertPrvipmas.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/bridge/routedeposit/Dphdr.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/bridge/main/MainGoasetting.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/bridge/main/MainSales.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/bridge/insertstockres/InsertStockresdet.java" root0="SKIP_INSPECTION" />
@@ -385,6 +165,7 @@
     <setting file="file://$PROJECT_DIR$/src/main/java/com/bridge/routestockres/Stockresdet.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/bridge/main/MainItem.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/bridge/main/MainStockonhand.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/bridge/main/MainPatch.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/bridge/insertsales/InsertSagoaaction.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/bridge/main/MainGoodsreturn.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/bridge/main/MainStaffpurchase.java" root0="SKIP_INSPECTION" />
@@ -392,15 +173,11 @@
     <setting file="file://$PROJECT_DIR$/src/main/java/com/bridge/routevip/Prvipmas.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/bridge/main/MainDeposit.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/bridge/main/MainVip.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/bridge/routeitem/Brand.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/bridge/insertstaffpurchase/InsertSastaffdischdr.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bridge/insertstaffpurchase/InsertSastaffdischdrcl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bridge/insertstaffpurchase/InsertStaffpurchase.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bridge/insertstaffpurchase/InsertStaffpurchasecl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bridge/routestaffpurchase/Sastaffdiscdtlcl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bridge/routestaffpurchase/Sastaffdiscexceptcl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bridge/routestaffpurchase/Sastaffdischdrcl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bridge/routestaffpurchase/Staffpurchasecl.java" />
@@ -416,18 +193,15 @@
         <option value="$PROJECT_DIR$/src/main/java/com/bridge/insertsales/InsertDktprtdet.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bridge/main/RouteVip.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bridge/routevip/Prvipmas.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bridge/insertvip/InsertPrvipmas.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bridge/main/HikariQracleTo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bridge/insertmerge/InsertCafecoupondet.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bridge/insertmerge/InsertCafecouponhdr.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bridge/routeitem/Size.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bridge/insertitem/InsertSize.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bridge/routeitem/Dummysku.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bridge/main/Quartz.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bridge/insertsales/InsertSalesDiscmas.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bridge/routesales/SalesDiscmas.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bridge/main/RouteSales.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/05b32995-a463-466f-aa48-23fbe4128da1/console.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/bridge/routesales/Sagoaaction.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bridge/insertsales/InsertSagoaaction.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bridge/insertstockres/InsertStockres.java" />
@@ -443,10 +217,18 @@
         <option value="$PROJECT_DIR$/src/main/java/com/bridge/main/MainStock.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bridge/main/MainStockonhand.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bridge/main/MainVip.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bridge/SQL/MSSQL.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bridge/SQL/ORACLE.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bridge/routesales/Edcsettlement.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bridge/insertsales/InsertEdcsettlement.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bridge/insertvip/InsertPrvipmas.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/05b32995-a463-466f-aa48-23fbe4128da1/console.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/ffc68113-a604-4eda-b477-f4b36a2f6df7/console.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bridge/insertsales/InsertSahdr.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bridge/routesales/Sahdr.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bridge/routedeposit/Dphdr.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bridge/SQL/ORACLE.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bridge/SQL/MSSQL.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bridge/main/Quartz.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bridge/main/MainPatch.java" />
       </list>
     </option>
   </component>
@@ -558,6 +340,42 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scratches">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Extensions" />
+              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.intellij.database" />
+              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyPsiNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyPsiNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DB Consoles" />
+              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="05b32995-a463-466f-aa48-23fbe4128da1" />
+              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyPsiNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -653,11 +471,10 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="database.data.csv.formats" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -666,9 +483,9 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="SearchEverywhereHistoryKey" value="hi&#9;FILE&#9;file://C:/Kei-DataBridging/HQ/src/main/java/com/bridge/main/HikariRms.java&#10;inserted&#9;PSI&#9;JAVA://com.bridge.insertsales.InsertEdcsettlement&#10;ed&#9;FILE&#9;file://C:/Kei-DataBridging/HQ/src/main/java/com/bridge/routesales/Edcsettlement.java&#10;insert sahdr&#9;PSI&#9;JAVA://com.bridge.insertsales.InsertSahdr&#10;edc&#9;PSI&#9;JAVA://com.bridge.routesales.Edcsettlement&#10;rms&#9;FILE&#9;file://C:/Kei-DataBridging/HQ/src/main/java/com/bridge/main/HikariRms.java&#10;log4&#9;FILE&#9;file://C:/Kei-DataBridging/HQ/src/main/resources/log4j.properties&#10;Hi&#9;FILE&#9;file://C:/Kei-DataBridging/HQ/src/main/java/com/bridge/main/HikariQracleFrom.java&#10;HikariRms&#9;FILE&#9;file://C:/Kei-DataBridging/HQ/src/main/java/com/bridge/main/HikariRms.java&#10;mssql&#9;FILE&#9;file://C:/Kei-DataBridging/HQ/src/main/java/com/bridge/main/HikariMssql.java&#10;stockres&#9;PSI&#9;JAVA://com.bridge.routestockres.Stockresdet&#10;stock&#9;PSI&#9;JAVA://com.bridge.routestockres.Stockres&#10;stockre&#9;FILE&#9;file://C:/Kei-DataBridging/HQ/src/main/java/com/bridge/insertstockres/InsertStockres.java&#10;stockresdet&#9;PSI&#9;JAVA://com.bridge.insertstockres.InsertStockresdet&#10;stockres_det&#9;null&#9;null&#10;main&#9;FILE&#9;file://C:/Kei-DataBridging/HQ/src/main/java/com/bridge/main/MainSales.java&#10;mainsales&#9;FILE&#9;file://C:/Kei-DataBridging/HQ/src/main/java/com/bridge/main/MainSales.java&#10;sagoa&#9;PSI&#9;JAVA://com.bridge.routesales.Sagoaaction&#10;insertSAgoaac&#9;PSI&#9;JAVA://com.bridge.insertsales.InsertSagoaaction&#10;mainme&#9;FILE&#9;file://C:/Kei-DataBridging/HQ/src/main/java/com/bridge/main/MainMerge.java&#10;mainsto&#9;FILE&#9;file://C:/Kei-DataBridging/HQ/src/main/java/com/bridge/main/MainStock.java&#10;main it&#9;FILE&#9;file://C:/Kei-DataBridging/HQ/src/main/java/com/bridge/main/MainItem.java&#10;main mer&#9;FILE&#9;file://C:/Kei-DataBridging/HQ/src/main/java/com/bridge/main/MainMerge.java&#10;bu&#9;PSI&#9;JAVA://com.bridge.routeitem.Bu&#10;GIT &#9;ACTION&#9;Git.Log&#10;GIT&#9;ACTION&#9;Git.Log&#10;git&#9;ACTION&#9;Github.Share&#10;discmas&#9;PSI&#9;JAVA://com.bridge.insertitem.InsertDiscmas#Discmaschkexists&#10;dummy&#9;PSI&#9;JAVA://com.bridge.insertitem.InsertDummysku&#10;line&#9;ACTION&#9;EditorToggleShowLineNumbers&#10;size&#9;FILE&#9;file://C:/Source/BRIDGE-HQ/src/main/java/com/bridge/routeitem/Size.java&#10;insertsize&#9;PSI&#9;JAVA://com.bridge.insertitem.InsertSize&#10;InsertCafecoupondet&#9;PSI&#9;JAVA://com.bridge.insertmerge.InsertCafecoupondet&#10;InsertCafecoupon&#9;PSI&#9;JAVA://com.bridge.insertmerge.InsertCafecouponhdr&#10;ui-guid&#9;null&#9;null&#10;st&#9;FILE&#9;file://C:/Source/DataBridge/src/main/java/com/bridge/routestockres/Stockres.java&#10;park&#9;PSI&#9;JAVA://com.bridge.routemerge.Parkpmt&#10;cafe&#9;PSI&#9;JAVA://com.bridge.routemerge.Cafecouponhdr&#10;posuser&#9;PSI&#9;JAVA://com.bridge.routemerge.Posuser&#10;sastafftx&#9;PSI&#9;JAVA://com.bridge.routemerge.Sastafftxn&#10;goto line&#9;null&#9;null&#10;plug&#9;ACTION&#9;WelcomeScreen.Plugins&#10;itemmas&#9;FILE&#9;file://C:/Source/DataBridge/src/main/java/com/bridge/routeitem/Itemmas.java&#10;mnve&#9;PSI&#9;JAVA://com.bridge.routeitem.Mnvendorupc&#10;mnvendor&#9;null&#9;null&#10;mnven&#9;PSI&#9;JAVA://com.bridge.insertitem.InsertMnvendorupc&#10;sastafftxn&#9;PSI&#9;JAVA://com.bridge.routemerge.Sastafftxn&#10;plugin&#9;ACTION&#9;StartupWizard&#10;saserial&#9;PSI&#9;JAVA://com.bridge.routesales.Saserial&#10;mnsea&#9;FILE&#9;file://C:/Source/DataBridge/src/main/java/com/bridge/routeitem/Mnseason.java" />
-    <property name="Console.TableResult.DefaultCopyAction" value="SQL Update Statements" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../BATCH_MODE" />
+    <property name="SearchEverywhereHistoryKey" value="insertca&#9;PSI&#9;JAVA://com.bridge.insertmerge.InsertCafecouponhdr&#10;ca&#9;PSI&#9;JAVA://com.bridge.routemerge.Cafecouponhdr&#10;rms&#9;FILE&#9;file://C:/Kei-DataBridging/HQ/src/main/java/com/bridge/main/HikariRms.java&#10;dphdr&#9;PSI&#9;JAVA://com.bridge.routedeposit.Dphdr&#10;sahdr&#9;PSI&#9;JAVA://com.bridge.routesales.Sahdr&#10;OR&#9;FILE&#9;file://C:/Kei-DataBridging/HQ/src/main/java/com/bridge/SQL/ORACLE.java&#10;hi&#9;FILE&#9;file://C:/Kei-DataBridging/HQ/src/main/java/com/bridge/main/HikariRms.java&#10;inserted&#9;PSI&#9;JAVA://com.bridge.insertsales.InsertEdcsettlement&#10;ed&#9;FILE&#9;file://C:/Kei-DataBridging/HQ/src/main/java/com/bridge/routesales/Edcsettlement.java&#10;insert sahdr&#9;PSI&#9;JAVA://com.bridge.insertsales.InsertSahdr&#10;edc&#9;PSI&#9;JAVA://com.bridge.routesales.Edcsettlement&#10;log4&#9;FILE&#9;file://C:/Kei-DataBridging/HQ/src/main/resources/log4j.properties&#10;Hi&#9;FILE&#9;file://C:/Kei-DataBridging/HQ/src/main/java/com/bridge/main/HikariQracleFrom.java&#10;HikariRms&#9;FILE&#9;file://C:/Kei-DataBridging/HQ/src/main/java/com/bridge/main/HikariRms.java&#10;mssql&#9;FILE&#9;file://C:/Kei-DataBridging/HQ/src/main/java/com/bridge/main/HikariMssql.java&#10;stockres&#9;PSI&#9;JAVA://com.bridge.routestockres.Stockresdet&#10;stock&#9;PSI&#9;JAVA://com.bridge.routestockres.Stockres&#10;stockre&#9;FILE&#9;file://C:/Kei-DataBridging/HQ/src/main/java/com/bridge/insertstockres/InsertStockres.java&#10;stockresdet&#9;PSI&#9;JAVA://com.bridge.insertstockres.InsertStockresdet&#10;stockres_det&#9;null&#9;null&#10;main&#9;FILE&#9;file://C:/Kei-DataBridging/HQ/src/main/java/com/bridge/main/MainSales.java&#10;mainsales&#9;FILE&#9;file://C:/Kei-DataBridging/HQ/src/main/java/com/bridge/main/MainSales.java&#10;sagoa&#9;PSI&#9;JAVA://com.bridge.routesales.Sagoaaction&#10;insertSAgoaac&#9;PSI&#9;JAVA://com.bridge.insertsales.InsertSagoaaction&#10;mainme&#9;FILE&#9;file://C:/Kei-DataBridging/HQ/src/main/java/com/bridge/main/MainMerge.java&#10;mainsto&#9;FILE&#9;file://C:/Kei-DataBridging/HQ/src/main/java/com/bridge/main/MainStock.java&#10;main it&#9;FILE&#9;file://C:/Kei-DataBridging/HQ/src/main/java/com/bridge/main/MainItem.java&#10;main mer&#9;FILE&#9;file://C:/Kei-DataBridging/HQ/src/main/java/com/bridge/main/MainMerge.java&#10;bu&#9;PSI&#9;JAVA://com.bridge.routeitem.Bu&#10;GIT &#9;ACTION&#9;Git.Log&#10;GIT&#9;ACTION&#9;Git.Log&#10;git&#9;ACTION&#9;Github.Share&#10;discmas&#9;PSI&#9;JAVA://com.bridge.insertitem.InsertDiscmas#Discmaschkexists&#10;dummy&#9;PSI&#9;JAVA://com.bridge.insertitem.InsertDummysku&#10;line&#9;ACTION&#9;EditorToggleShowLineNumbers&#10;size&#9;FILE&#9;file://C:/Source/BRIDGE-HQ/src/main/java/com/bridge/routeitem/Size.java&#10;insertsize&#9;PSI&#9;JAVA://com.bridge.insertitem.InsertSize&#10;InsertCafecoupondet&#9;PSI&#9;JAVA://com.bridge.insertmerge.InsertCafecoupondet&#10;InsertCafecoupon&#9;PSI&#9;JAVA://com.bridge.insertmerge.InsertCafecouponhdr&#10;ui-guid&#9;null&#9;null&#10;st&#9;FILE&#9;file://C:/Source/DataBridge/src/main/java/com/bridge/routestockres/Stockres.java&#10;park&#9;PSI&#9;JAVA://com.bridge.routemerge.Parkpmt&#10;cafe&#9;PSI&#9;JAVA://com.bridge.routemerge.Cafecouponhdr&#10;posuser&#9;PSI&#9;JAVA://com.bridge.routemerge.Posuser&#10;sastafftx&#9;PSI&#9;JAVA://com.bridge.routemerge.Sastafftxn&#10;goto line&#9;null&#9;null&#10;plug&#9;ACTION&#9;WelcomeScreen.Plugins&#10;itemmas&#9;FILE&#9;file://C:/Source/DataBridge/src/main/java/com/bridge/routeitem/Itemmas.java&#10;mnve&#9;PSI&#9;JAVA://com.bridge.routeitem.Mnvendorupc&#10;mnvendor&#9;null&#9;null" />
+    <property name="Console.TableResult.DefaultCopyAction" value="SQL Insert Statements" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/STORE_TEST" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="267" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
@@ -1324,7 +1141,19 @@
       <workItem from="1447119373738" duration="5489000" />
       <workItem from="1447128804171" duration="4841000" />
       <workItem from="1447206844908" duration="2060000" />
-      <workItem from="1447215043148" duration="72000" />
+      <workItem from="1447215043148" duration="1476000" />
+      <workItem from="1447290642433" duration="1130000" />
+      <workItem from="1447293103085" duration="5214000" />
+      <workItem from="1447321122187" duration="1075000" />
+      <workItem from="1447661062376" duration="703000" />
+      <workItem from="1447722365305" duration="3535000" />
+      <workItem from="1447751731285" duration="1209000" />
+      <workItem from="1447815115716" duration="3402000" />
+      <workItem from="1447834772753" duration="40000" />
+      <workItem from="1447838969598" duration="619000" />
+      <workItem from="1447903983242" duration="6067000" />
+      <workItem from="1448241388092" duration="6801000" />
+      <workItem from="1448261367299" duration="33000" />
     </task>
     <task id="LOCAL-00001" summary="Kei">
       <created>1444120154375</created>
@@ -1332,11 +1161,17 @@
       <option name="project" value="LOCAL" />
       <updated>1444120154375</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Kei">
+      <created>1447215130788</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1447215130788</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="345855000" />
+    <option name="totallyTimeSpent" value="377087000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1348,19 +1183,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32834226" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32869378" sideWeight="0.49555555" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32762313" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3807054" sideWeight="0.50319827" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23614073" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3254818" sideWeight="0.4978678" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42077088" sideWeight="0.4888889" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33618844" sideWeight="0.49253732" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13059701" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33547696" sideWeight="0.4978678" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29474813" sideWeight="0.4888889" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3351178" sideWeight="0.49253732" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17110874" sideWeight="0.48931623" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16364606" sideWeight="0.5106838" order="5" side_tool="true" content_ui="tabs" />
@@ -1369,15 +1203,16 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14978679" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16364606" sideWeight="0.5106838" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40685225" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4051447" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31832796" sideWeight="0.49555555" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39037433" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3811007" sideWeight="0.4968017" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37942123" sideWeight="0.4968017" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32869378" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1428,10 +1263,24 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/bridge/insertmerge/InsertCafecouponhdr.java</url>
+          <line>20</line>
+          <properties />
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/bridge/insertmerge/InsertCafecouponhdr.java</url>
+          <line>21</line>
+          <properties />
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="26" />
+      <option name="time" value="39" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1440,97 +1289,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/insertmerge/InsertXrateoverrideuser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="54" column="60" selection-start-line="54" selection-start-column="60" selection-end-line="54" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/routegoodsreturn/Grorgdet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2905983">
-          <caret line="104" column="51" selection-start-line="104" selection-start-column="36" selection-end-line="104" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/main/RouteGoodsreturn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2542735">
-          <caret line="18" column="38" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/insertitem/InsertDiscmas.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5405983">
-          <caret line="135" column="40" selection-start-line="135" selection-start-column="40" selection-end-line="135" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/routesales/SalesDiscmas.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BridgeLC.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/insertsales/InsertSalesDiscmas.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="267" column="26" selection-start-line="267" selection-start-column="26" selection-end-line="267" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/insertsales/InsertSagoahdr.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.55739516">
-          <caret line="209" column="57" selection-start-line="209" selection-start-column="57" selection-end-line="209" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/routeitem/Bu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07505519">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/main/RouteSales.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4746137">
-          <caret line="259" column="54" selection-start-line="259" selection-start-column="54" selection-end-line="259" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/main/RouteMerge.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/main/RouteItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.018763797">
-          <caret line="56" column="48" selection-start-line="56" selection-start-column="48" selection-end-line="56" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/routestockonhand/Stkholdingtrn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28145695">
-          <caret line="58" column="31" selection-start-line="58" selection-start-column="31" selection-end-line="58" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/routestockonhand/Stockreservationpos.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1566,31 +1324,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/main/HikariMerge.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/05b32995-a463-466f-aa48-23fbe4128da1/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.072961375">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/routesales/Sagoaaction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="133" column="80" selection-start-line="133" selection-start-column="80" selection-end-line="133" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/main/Quartz.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="152" column="75" selection-start-line="152" selection-start-column="75" selection-end-line="152" selection-end-column="75" />
         </state>
       </provider>
     </entry>
@@ -1636,34 +1373,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/main/HikariMssql.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42316017">
-          <caret line="27" column="57" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/main/HikariQracleFrom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.024891775">
-          <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33116883">
           <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/main/HikariQracleTo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42965367">
-          <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1685,7 +1398,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="228" column="0" selection-start-line="228" selection-start-column="0" selection-end-line="228" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1703,35 +1415,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/SQL/ORACLE.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3692" column="32" selection-start-line="3692" selection-start-column="32" selection-end-line="3692" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/main/HikariRms.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="58" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/SQL/MSSQL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5641026">
-          <caret line="6221" column="27" selection-start-line="6221" selection-start-column="27" selection-end-line="6221" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/routesales/Edcsettlement.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.89102566">
           <caret line="226" column="0" selection-start-line="195" selection-start-column="37" selection-end-line="226" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1739,32 +1426,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5747863">
           <caret line="253" column="17" selection-start-line="253" selection-start-column="17" selection-end-line="253" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/main/MainSales.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding>
-            <marker date="1447120213684" expanded="true" signature="3320:3489" placeholder="SELECT DATA_..DATA_UPDATE_LOG_POS..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/routevip/Prvipmas.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="208" column="46" selection-start-line="208" selection-start-column="46" selection-end-line="208" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/insertsales/InsertSahdr.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1772,7 +1433,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="207" column="60" selection-start-line="207" selection-start-column="60" selection-end-line="207" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1780,7 +1440,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="166" column="13" selection-start-line="166" selection-start-column="13" selection-end-line="166" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1788,32 +1447,217 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="215" column="20" selection-start-line="215" selection-start-column="20" selection-end-line="215" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/main/MainItem.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/insertvip/InsertPrvipmas.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.018763797">
+          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/db5825d2/05b32995-a463-466f-aa48-23fbe4128da1/posdb.dbo.asia_miles">
+      <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="223" column="0" selection-start-line="223" selection-start-column="0" selection-end-line="223" selection-end-column="0" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/05b32995-a463-466f-aa48-23fbe4128da1/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.8333333">
+          <caret line="5" column="117" selection-start-line="5" selection-start-column="117" selection-end-line="5" selection-end-column="117" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ffc68113-a604-4eda-b477-f4b36a2f6df7/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.56666666">
+          <caret line="1" column="50" selection-start-line="1" selection-start-column="50" selection-end-line="1" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/routevip/Prvipmas.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19315673">
+          <caret line="208" column="46" selection-start-line="208" selection-start-column="46" selection-end-line="208" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/insertitem/InsertBrand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.018763797">
+          <caret line="131" column="13" selection-start-line="131" selection-start-column="13" selection-end-line="132" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/main/RouteSales.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.491453">
+          <caret line="259" column="54" selection-start-line="259" selection-start-column="54" selection-end-line="259" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/routemerge/Cafecouponhdr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.018763797">
+          <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/routedeposit/Dphdr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.018763797">
+          <caret line="52" column="53" selection-start-line="52" selection-start-column="53" selection-end-line="52" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/insertmerge/InsertCafecouponhdr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.018763797">
+          <caret line="62" column="56" selection-start-line="62" selection-start-column="42" selection-end-line="62" selection-end-column="56" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/main/MainMerge.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47019866">
+        <state vertical-scroll-proportion="0.4370861">
           <caret line="302" column="13" selection-start-line="302" selection-start-column="13" selection-end-line="302" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/insertsales/InsertSahdr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="75" column="13" selection-start-line="75" selection-start-column="13" selection-end-line="75" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/main/HikariRms.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48839778">
+          <caret line="30" column="58" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/main/MainItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5116022">
+          <caret line="223" column="0" selection-start-line="223" selection-start-column="0" selection-end-line="223" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/main/HikariMssql.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.58232045">
+          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/main/HikariQracleFrom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.01878453">
+          <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="25" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/main/HikariQracleTo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41767955">
+          <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/servlet/bridgeServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1878453">
+          <caret line="20" column="57" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/main/MainSales.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.7801106">
+          <caret line="401" column="17" selection-start-line="401" selection-start-column="17" selection-end-line="401" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/routesales/Sahdr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.69502765">
+          <caret line="50" column="66" selection-start-line="50" selection-start-column="66" selection-end-line="50" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/main/HikariMerge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3569061">
+          <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/main/Quartz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="165" column="41" selection-start-line="165" selection-start-column="40" selection-end-line="165" selection-end-column="41" />
           <folding>
-            <marker date="1447120020941" expanded="true" signature="2095:2264" placeholder="SELECT DATA_..DATA_UPDATE_LOG_POS..." />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/insertvip/InsertPrvipmas.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/SQL/ORACLE.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.030050084">
-          <caret line="422" column="62" selection-start-line="422" selection-start-column="62" selection-end-line="422" selection-end-column="62" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/SQL/MSSQL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6227" column="22" selection-start-line="6227" selection-start-column="22" selection-end-line="6227" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/insertsales/InsertDktprtdet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.5027624">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/projo/Dataupdatelog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="79" column="30" selection-start-line="79" selection-start-column="30" selection-end-line="79" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/main/MainPatch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="56" column="66" selection-start-line="56" selection-start-column="66" selection-end-line="56" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bridge/routeitem/Brand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32380953">
+          <caret line="26" column="76" selection-start-line="26" selection-start-column="76" selection-end-line="26" selection-end-column="76" />
           <folding />
         </state>
       </provider>

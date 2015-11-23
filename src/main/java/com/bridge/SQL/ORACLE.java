@@ -1106,6 +1106,12 @@ public class ORACLE {
                 "  v_cntDphdrdesc NUMBER := 0;\n" +
                 "  v_cntSastafftxn NUMBER := 0;\n" +
                 "  v_cntDktprtdtl NUMBER := 0;\n" +
+                "  v_cntsadetchk NUMBER := 0;\n" +
+                "  v_cntsatenderchk NUMBER := 0;\n" +
+                "  v_cntstaffchk NUMBER := 0;\n" +
+                "  v_cntstaffitemchk NUMBER := 0;\n" +
+                "  v_cnthvsalesrtn NUMBER := 0;\n" +
+                "  v_chkgex NUMBER := 0;\n" +
                 "\n" +
                 "Cursor c1\n" +
                 "is\n" +
@@ -1124,6 +1130,7 @@ public class ORACLE {
                 "  v_cnthvrtn :=0;\n" +
                 "  v_chkrtn :=0;\n" +
                 "  v_chkvoid:=0;\n" +
+                "  v_cnthvsalesrtn:=0;\n" +
                 "    \n" +
                 "  select count(*) into v_cnthvrtn from sahdr a\n" +
                 "  where a.entity_key = v_entity_key\n" +
@@ -1140,6 +1147,58 @@ public class ORACLE {
                 "    end if;\n" +
                 "  end if;\n" +
                 "  \n" +
+                "  select count(*) into v_cnthvsalesrtn from sahdr a\n" +
+                "  where a.entity_key = v_entity_key\n" +
+                "  and a.tx_type in('01','02');\n" +
+                "  \n" +
+                "  if v_cnthvsalesrtn > 0 then\n" +
+                "    v_cntsadetchk := 0;\n" +
+                "    select count(*) into v_cntsadetchk from sadet a\n" +
+                "    where a.entity_key = v_entity_key;\n" +
+                "    if v_cntsadetchk = 0 then \n" +
+                "        v_chk := 1;\n" +
+                "        update data_update_log set remark ='Fail sadet'\n" +
+                "        where entity_name ='sahdr' \n" +
+                "        and entity_key = v_entity_key ;\n" +
+                "    end if;\n" +
+                "    \n" +
+                "    v_cntsatenderchk := 0;\n" +
+                "    select count(*) into v_cntsatenderchk from satender a\n" +
+                "    where a.entity_key = v_entity_key;\n" +
+                "    if v_cntsatenderchk = 0 then \n" +
+                "     select count(*) into v_chkgex from sahdr a\n" +
+                "     where a.entity_key = v_entity_key\n" +
+                "     and a.tx_type in('01','02')\n" +
+                "     and a.gex ='Y';\n" +
+                "      if v_chkgex = 0 then \n" +
+                "          v_chk := 1;\n" +
+                "          update data_update_log set remark ='Fail satender'\n" +
+                "          where entity_name ='sahdr' \n" +
+                "          and entity_key = v_entity_key ;\n" +
+                "       end if;  \n" +
+                "    end if;\n" +
+                "    \n" +
+                "    v_cntstaffchk := 0;\n" +
+                "    select count(*) into v_cntstaffchk from sastaff a\n" +
+                "    where a.entity_key = v_entity_key;\n" +
+                "    if v_cntstaffchk = 0 then \n" +
+                "        v_chk := 1;\n" +
+                "        update data_update_log set remark ='Fail sastaff'\n" +
+                "        where entity_name ='sahdr' \n" +
+                "        and entity_key = v_entity_key ;\n" +
+                "    end if;\n" +
+                "    \n" +
+                "    v_cntstaffitemchk := 0;\n" +
+                "    select count(*) into v_cntstaffitemchk from sastaffitem a\n" +
+                "    where a.entity_key = v_entity_key;\n" +
+                "    if v_cntstaffitemchk = 0 then \n" +
+                "        v_chk := 1;\n" +
+                "        update data_update_log set remark ='Fail sastaffitem'\n" +
+                "        where entity_name ='sahdr' \n" +
+                "        and entity_key = v_entity_key ;\n" +
+                "    end if;\n" +
+                "  end if;\n" +
+                "\n" +
                 "  /*v_chk := 0;\n" +
                 "  v_cnthvrtn :=0;\n" +
                 "  v_chkrtn :=0;*/\n" +
@@ -2146,7 +2205,7 @@ public class ORACLE {
                 "  COMMIT WORK;\n" +
                 "END;";
 
-        ReturnUpdate ="Declare\n" +
+        ReturnUpdate = "Declare\n" +
                 "  v_log_dt         TIMESTAMP(3);\n" +
                 "  v_LAST_SYNC_TIME TIMESTAMP(3);\n" +
                 "  v_MAX_BATCH      VARCHAR2(100);\n" +
@@ -2245,7 +2304,7 @@ public class ORACLE {
                 "    COMMIT WORK;\n" +
                 "END;";
 
-        MergeUpdate ="Declare\n" +
+        MergeUpdate = "Declare\n" +
                 "  v_log_dt         TIMESTAMP(3);\n" +
                 "  v_LAST_SYNC_TIME TIMESTAMP(3);\n" +
                 "  v_MAX_BATCH      VARCHAR2(100);\n" +
@@ -2675,7 +2734,7 @@ public class ORACLE {
                 "    COMMIT WORK; \n" +
                 "END;";
 
-        InsertMergeDataLog="Declare\n" +
+        InsertMergeDataLog = "Declare\n" +
                 "  v_log_dt         TIMESTAMP(3);\n" +
                 "  v_LAST_SYNC_TIME TIMESTAMP(3);\n" +
                 "  v_MAX_BATCH      VARCHAR2(100);\n" +
@@ -2969,7 +3028,7 @@ public class ORACLE {
                 "   COMMIT WORK;\n" +
                 "END;";
 
-        CouponPsTxCount ="Declare\n" +
+        CouponPsTxCount = "Declare\n" +
                 "    v_entity_key VARCHAR2(100);\n" +
                 "    v_chkrtn NUMBER := 0;\n" +
                 "    v_chk NUMBER := 0;\n" +
@@ -3095,7 +3154,7 @@ public class ORACLE {
                 "\n" +
                 "end;";
 
-        StockResUpdDate ="Declare\n" +
+        StockResUpdDate = "Declare\n" +
                 "  v_log_dt         TIMESTAMP(3);\n" +
                 "  v_LAST_SYNC_TIME TIMESTAMP(3);\n" +
                 "  v_MAX_BATCH      VARCHAR2(100);\n" +
@@ -3182,7 +3241,7 @@ public class ORACLE {
                 "    COMMIT WORK;\n" +
                 "END;";
 
-        InsertStockResDataLog ="Declare\n" +
+        InsertStockResDataLog = "Declare\n" +
                 "  v_log_dt         TIMESTAMP(3);\n" +
                 "  v_LAST_SYNC_TIME TIMESTAMP(3);\n" +
                 "  v_MAX_BATCH      VARCHAR2(100);\n" +
@@ -3232,7 +3291,7 @@ public class ORACLE {
                 "   COMMIT WORK;\n" +
                 "END;";
 
-        StockResPsTxCount ="Declare\n" +
+        StockResPsTxCount = "Declare\n" +
                 "v_stockres_entity_key VARCHAR2(100);\n" +
                 "v_cntstockres_det NUMBER := 0;\n" +
                 "v_stockreschk NUMBER := 0;\n" +
@@ -3288,7 +3347,7 @@ public class ORACLE {
                 "  COMMIT ;\n" +
                 "end;";
 
-        DepositUpdate ="Declare\n" +
+        DepositUpdate = "Declare\n" +
                 "  v_log_dt         TIMESTAMP(3);\n" +
                 "  v_LAST_SYNC_TIME TIMESTAMP(3);\n" +
                 "  v_MAX_BATCH      VARCHAR2(100);\n" +

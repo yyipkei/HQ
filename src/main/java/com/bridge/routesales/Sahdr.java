@@ -41,7 +41,8 @@ public class Sahdr {
                 + "'"
                 + "and reg_no='"
                 + regno
-                + "'" + "and tx_no ='" + txno + "'";
+                + "'" + "and tx_no ='" + txno + "'"
+                +"Order BY LAST_UPD_DT";
 
         // List<Sahdr> sahdrs = new ArrayList<Sahdr>();
 

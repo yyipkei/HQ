@@ -65,6 +65,9 @@ public class Quartz {
             JobDetail jobVip = newJob(MainVip.class).withIdentity(
                     "job10", "group10").build();
 
+			JobDetail jobPatch = newJob(MainPatch.class).withIdentity(
+					"job11", "group11").build();
+
 			// Trigger the job to run now, and then repe+at every 15 seconds ->
 			// TriggerBuilder.newTrigger()
 			Trigger trigger = newTrigger()
@@ -137,6 +140,13 @@ public class Quartz {
                             simpleSchedule().withIntervalInSeconds(10)
                                     .repeatForever()).build();
 
+			Trigger trigger11 = newTrigger()
+					.withIdentity("trigger11", "group11")
+					.startNow()
+					.withSchedule(
+							simpleSchedule().withIntervalInSeconds(1000)
+									.repeatForever()).build();
+
 			//Connection Pool
 			//HikariMssql.getInstance();
 			HikariQracleTo.getInstance();
@@ -156,6 +166,7 @@ public class Quartz {
 			scheduler.scheduleJob(jobStockonhand, trigger9);// Onhand
             //scheduler.scheduleJob(jobVip, trigger10);// vip
 			// Thread.sleep(1000 * 60 * 5); // Sleep 5 minutes
+			scheduler.scheduleJob(jobPatch, trigger11);//Patch
 			// scheduler.shutdown();
 
 		} catch (SchedulerException se) {
